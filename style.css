@@ -1,0 +1,269 @@
+:root{
+  --bg:#c6c8cc;
+  --panel:#f5f5f5;
+  --text:#e5e7eb;
+  --muted:#fdfdfd;
+  --accent:#f3f3f3;
+  --accent-2:#ffffff;
+  --card:#fafeff;
+  --border:#f0f0f0;
+  --focus:#ffffff;
+  --link:#ffffff;
+}
+
+*{box-sizing:border-box}
+
+
+
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+  background:linear-gradient(180deg,var(--bg),#0b1020 40%, #060a14);
+  color:var(--text);
+  line-height:1.6;
+
+}
+
+a{color:var(--link)}
+
+a:hover{
+  opacity:.9
+
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:1rem
+
+}
+
+.header{
+  position:sticky;top:0;z-index:20;
+  background:rgba(8,12,24,.8);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);
+}
+
+.nav{
+  display:flex;
+  gap:1rem;
+  align-items:center;
+  justify-content:space-between
+
+}
+
+.nav a{
+  padding:.6rem .9rem;
+  border-radius:999px;
+  text-decoration:none;
+  border:1px solid transparent
+
+}
+
+.nav a[aria-current="page"], .nav a:hover{
+  border-color:var(--border);background:rgba(255,255,255,.04)
+
+}
+
+.brand{
+  display:flex;
+  gap:.7rem;
+  align-items:center;
+  text-decoration:none;
+  color:var(--text);font-weight:700
+
+}
+
+.brand .logo{
+  width:28px;
+  height:28px;
+  border-radius:7px;
+  background:radial-gradient(circle at 30% 30%, var(--accent), var(--accent-2));display:inline-block
+
+}
+
+.hero{
+  padding:5rem 1rem 3rem;
+  text-align:center;
+  background:radial-gradient(1200px 400px at 50% 0%, rgba(56,189,248,.15), transparent 60%);
+
+}
+
+.hero h1{
+  font-size:clamp(1.6rem,4vw,3rem);margin:.4rem 0
+
+}
+
+.hero p{
+  color:var(--muted);
+  max-width:800px;
+  margin:.5rem auto 0
+
+}
+
+.grid{
+  display:grid;
+  gap:1rem;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr))
+
+}
+
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+  border:1px solid var(--border);border-radius:18px;padding:1.1rem;
+  box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+}
+
+.card h3{
+  margin-top:0
+
+}
+
+.kbd{
+  border:1px solid var(--border);
+  padding:.2rem .4rem;
+  border-radius:.4rem;
+  background:#0a0f1e
+
+}
+
+footer{
+  margin-top:3rem;
+  padding:2rem 1rem;
+  border-top:1px solid var(--border);
+  background:rgba(8,12,24,.5)
+
+}
+
+.footer-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.8rem
+
+}
+
+.skip-link{
+  position:absolute;
+  left:-9999px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden
+
+}
+
+.skip-link:focus{
+  left:1rem;
+  top:1rem;
+  width:auto;height:auto;
+  padding:.5rem .8rem;
+  background:#1f2937;
+  color:#fff;
+  border-radius:.5rem
+
+}
+
+main a.button{
+  display:inline-block;
+  margin-top:.8rem;
+  padding:.6rem 1rem;
+  border-radius:12px;
+  border:1px solid var(--border);
+  text-decoration:none;
+  font-weight:600;
+  background:#0d152b;
+
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:1rem 0
+
+}
+
+th,td{
+  padding:.6rem;
+  border-bottom:1px solid var(--border);
+  text-align:left
+
+}
+
+
+thead th{
+  background:#0d152b
+
+}
+
+
+figure{
+  margin:0
+
+}
+
+
+figcaption{
+  color:var(--muted);
+  font-size:.9rem;
+  margin-top:.4rem
+
+}
+
+
+form{
+  display:grid;
+  gap:.8rem;
+  max-width:720px
+
+}
+
+
+input,select,textarea{
+  width:100%;
+  padding:.7rem;
+  border-radius:10px;
+  border:1px solid var(--border);
+  background:#0c1428;color:var(--text)
+
+}
+
+input:focus,select:focus,textarea:focus{
+  outline:3px solid var(--focus);outline-offset:2px
+
+}
+
+
+button{
+  padding:.75rem 1.1rem;
+  border-radius:12px;
+  border:1px solid var(--border);
+  background:linear-gradient(180deg,#12203a,#0b162d);
+  color:var(--text);font-weight:700;
+
+}
+
+.badge{
+  display:inline-block;
+  padding:.2rem .5rem;
+  border:1px solid var(--border);
+  border-radius:999px;
+  font-size:.8rem;color:var(--muted)
+
+}
+
+
+ul.resource-list{
+  margin:0;padding-left:1.1rem
+
+}
+
+
+code{
+  font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  background:#0a0f1e;
+  padding:.15rem .35rem;
+  border-radius:.35rem;
+  border:1px solid var(--border)
+
+}
