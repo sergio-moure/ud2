@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,25 +24,27 @@
 
         <main id="principal" class="container">
             <h1>Contacto</h1>
-            <p>Formulario accesible (demostración, no envía datos).</p>
+            
 
             <form action="#" method="post" aria-describedby="ayuda-form">
-                <p id="ayuda-form" class="badge">Todos los campos marcados con * son obligatorios.</p>
+                <p id="ayuda-form" class="badge">Todos los campos con * son obligatorios</p>
 
                 <fieldset class="card">
                 <legend>Datos personales</legend>
                 <label for="nombre">Nombre y apellidos *</label>
-                <input id="nombre" name="nombre" type="text" autocomplete="name" required="">
+                <input id="nombre" name="nombre" type="text" autocomplete="name" required="" placeholder="Sergio Moure Diaz">
 
                 <label for="email">Correo electrónico *</label>
-                <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required="">
+                <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required="" placeholder="smdiaz06@iesallerulloa.es">
 
                 <label for="asunto">Asunto *</label>
                 <select id="asunto" name="asunto" required="">
-                    <option value="">— Selecciona —</option>
+                    <option value="">Selecciona</option>
                     <option>Consulta general</option>
                     <option>Soporte técnico</option>
                     <option>Colaboración educativa</option>
+                    <option>Presupuesto para su nuevo PC</option>
+                    <option>Averías</option>
                 </select>
                 </fieldset>
 
@@ -51,13 +53,10 @@
                 <label for="mensaje">Tu mensaje *</label>
                 <textarea id="mensaje" name="mensaje" rows="6" required=""></textarea>
 
-                <div>
-                    <input id="privacidad" name="privacidad" type="checkbox" required="">
-                    <label for="privacidad">He leído y acepto la <a href="#privacidad-info">política de privacidad</a> *</label>
-                </div>
+                
                 </fieldset>
 
-                <button type="submit" aria-disabled="true" title="Demostración: no se envían datos">Enviar</button>
+                <button type="submit" aria-disabled="true">Enviar</button>
             </form>
 
             
