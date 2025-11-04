@@ -37,6 +37,13 @@
                 <label for="email">Correo electrónico *</label>
                 <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required="" placeholder="smdiaz06@iesallerulloa.es">
 
+                <div class="campo">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="+34 999 999" pattern="[0-9+\s\-\(\)]+"
+                        autocomplete="tel">
+                        <small class="ayuda">Formato: números, espacios, +, -, ( )</small>
+                </div>
+
                 <label for="asunto">Asunto *</label>
                 <select id="asunto" name="asunto" required="">
                     <option value="">Selecciona</option>
@@ -52,9 +59,30 @@
                 <legend>Mensaje</legend>
                 <label for="mensaje">Tu mensaje *</label>
                 <textarea id="mensaje" name="mensaje" rows="6" required=""></textarea>
-
                 
+                <fieldset>
+                    <legend>Selecciona el genero"</legend>
+
+                    <div class="genero">
+                        <span>Género:</span>
+                        <div class="opciones">
+                            <label for="genero-masculino">
+                            <input type="radio" id="genero-masculino" name="genero" value="masculino" required>Masculino
+                            </label>
+                            <label for="genero-femenino">
+                            <input type="radio" id="genero-femenino" name="genero" value="femenino">Femenino
+                            </label>
+                            <label for="genero-otro">
+                            <input type="radio" id="genero-otro" name="genero" value="otro">Otro
+                            </label>                        
+                        </div>
+                    </div>
+
+                    
+
                 </fieldset>
+                
+                
 
                 <button type="submit" aria-disabled="true">Enviar</button>
             </form>
