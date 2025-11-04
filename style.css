@@ -40,7 +40,7 @@ a:hover{
 
 .header{
   position:sticky;top:0;z-index:20;
-  background:rgba(30, 28, 129, 0.8);backdrop-filter:blur(10px);
+  background:rgba(253, 253, 253, 0.8);backdrop-filter:blur(10px);
   border-bottom:1px solid var(--border);
 }
 
@@ -129,7 +129,7 @@ footer{
   margin-top:3rem;
   padding:2rem 1rem;
   border-top:1px solid var(--border);
-  background:rgba(8,12,24,.5)
+  background:rgba(240, 240, 240, 0.5)
 
 }
 
